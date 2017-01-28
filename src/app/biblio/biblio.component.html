@@ -1,10 +1,5 @@
-
-            <div class="col-md-8">
-        <div class="row">
-            <div class="col-lg-8">
-                <h1>Blog Post Title</h1>
-                <hr>
-                <img class="img-responsive" src="http://placehold.it/900x300" alt="">
-                <hr>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p>
-            </div>
+<div *ngFor="let cat of games">
+    <h3> Name : {{ cat.name }} </h3>
+    <p> Genre : {{ cat.genre }} </p>
+    <p> Summary : {{ cat.summary}} </p>
+</div>
