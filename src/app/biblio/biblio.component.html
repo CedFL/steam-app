@@ -1,0 +1,65 @@
+<div class="container">
+  <h3 class="text-center">Bibliothèque de jeux</h3>
+
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <form (submit)="searchGame($event);">
+        <div class="form-group">
+          <input class="form-control" type="text" [(ngModel)]="search" name="research"
+                 placeholder="Entrez votre recherche..."/>
+        </div>
+      </form>
+      <p class="text-center"><em>Tapez le nom d'une catégorie ou d'un jeu...</em></p>
+    </div>
+  </div>
+
+    <div class="row result-row">
+    <div *ngIf="searchCatResult" class="col-md-6 cat-search">
+      <h4 class="text-center">Catégorie:</h4>
+
+      <p *ngFor="let cat of searchCatResult">
+        {{cat.name}} -
+        <a href="" [routerLink]="['/les-jeux', cat.id]">En savoir plus</a>
+
+      </p>
+    </div>
+ <div class="col-md-6" *ngIf="searchResult">
+      <h4 class="text-center">Nom:</h4>
+      <p *ngFor="let result of searchResult">
+        {{result.name}} -
+
+        <a href="" [routerLink]="['/les-jeux', result.id]">En savoir plus</a>
+
+      </p>
+
+    </div>
+  </div>
+
+  <div class="text-center">
+
+    <hr>
+    <div class="col-md-12">
+
+      <h4>Liste de jeux :</h4>
+
+<table class="table">
+
+        <thead>
+
+
+
+        </thead>
+
+        <tbody *ngFor="let game of games">
+
+        <tr>
+          <td><a href="" [routerLink]="['/les-jeux', game.id]">{{game.name}}</a></td>
+
+        </tr>
+
+        </tbody>
+
+      </table>
+
+</div>
+</div>
