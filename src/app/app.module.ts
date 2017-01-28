@@ -11,11 +11,11 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BiblioComponent } from './biblio/biblio.component';
-<<<<<<< HEAD
+
 import { AccueilComponent } from './accueil/accueil.component';
-=======
+
 import { PageComponent } from './page/page.component';
->>>>>>> origin/master
+
 
 @NgModule({
   declarations: [
@@ -23,11 +23,9 @@ import { PageComponent } from './page/page.component';
     HeaderComponent,
     FooterComponent,
     BiblioComponent,
-<<<<<<< HEAD
-    AccueilComponent
-=======
+    AccueilComponent,
     PageComponent
->>>>>>> origin/master
+
   ],
   imports: [
     BrowserModule,

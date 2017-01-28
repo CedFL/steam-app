@@ -6,7 +6,7 @@ export class GameService {
   constructor() {
   }
 
-//Données sur les jeux..
+
   gamesJson = [{
     "id": 1,
     "name": "Super Mario World",
@@ -310,12 +310,12 @@ export class GameService {
       "name": "Point-and-click"
     }];
 
-//Recuperation des donnees Jeu
+
   getData() {
     return this.gamesJson;
   }
 
-//Recuperation des donnees Categories
+
   getCat() {
     return this.catJson;
   }
