@@ -8,12 +8,14 @@ import { GameService } from './game.service';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { BiblioComponent } from './biblio/biblio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    BiblioComponent
   ],
   imports: [
     BrowserModule,
