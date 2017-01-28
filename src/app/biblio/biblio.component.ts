@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {GameService} from '../game.service';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   moduleId: 'moduleId',
@@ -14,6 +15,6 @@ export class BiblioComponent implements OnInit {
 constructor(private gameService: GameService) {}
 
 ngOnInit() {
-  this.games = this.gameService.getGames();
+
 }
 }
