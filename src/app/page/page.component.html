@@ -3,7 +3,8 @@
   <div class="row">
 
     <div class="col-md-10 col-md-offset-1">
-      <h1 class="text-center" style="text-decoration: underline;">{{test.name}}</h1>
+      <h1 class="text-center" >{{test.name}}</h1>
+      <br>
 
       <img [src] = "urlCover" class="img-responsive img-thumbnail center-block"/>
 
@@ -13,6 +14,11 @@
       <h3>Autres images:</h3>
       <img [src] = "urlScreen1" class="img-responsive img-thumbnail "/>
       <img [src] = "urlScreen2" class="img-responsive img-thumbnail "/>
+
+      <form>
+      <br>
+      <button type="button" class="btn btn-primary" onclick="history.go(-1)">Retour</button>
+      </form>
     </div>
   </div>
 </div>

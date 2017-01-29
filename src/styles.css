@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+body { 
+background-color: #1C455F;
+color: white;
+}
+
+body .h4 {
+    color: #66c0f4 ;
+}
+
+.h1, .h2, .h3, .h5, .h6, h1, h2, h3, h5, h6 {
+    color: white; 
+}
+
